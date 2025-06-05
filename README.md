@@ -10,7 +10,7 @@ To predict the coordinates of unknown nodes in WSNs by applying fuzzy logic tech
 
 - **Fuzzy Inference Type:** Mamdani
 - **Membership Functions:** Triangular, Gaussian
-- **Defuzzification Methods:** Center of Sums, Weighted Average
+- **Defuzzification Methods:** Center of Sums, Weighted Average  
 - A total of 4 combinations were tested for performance comparison.
 
 ## 📊 Performance Metrics
@@ -25,21 +25,21 @@ To predict the coordinates of unknown nodes in WSNs by applying fuzzy logic tech
 
 ## 🗃️ Dataset
 
-- Sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/)
-- 107 samples with 6 attributes
+- 107 samples with 6 attributes  
 - Inputs: Anchor ratio, transmission range, node density, number of iterations  
 - Output: Average Localization Error (ALE)
 
 ## 🚀 Future Work
 
-- Comparison with Sugeno-type fuzzy systems
-- Testing on larger and more complex datasets
+- Comparison with Sugeno-type fuzzy systems  
+- Testing on larger and more complex datasets  
 - Real-time deployment in physical WSN environments
+
+## 👥 Authors
+
+- [**A. Furkan Öcel**](https://github.com/AFurkanOcel)  
+- [**Halil Alpak**](https://github.com/HalilALPAK)  
 
 ## 🤝 Contributions
 
 Feel free to open issues or pull requests to improve the project.
-
-## 📄 License
-
-This project is for academic purposes. For reuse or licensing questions, please contact the authors.
