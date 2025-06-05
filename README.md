@@ -1,45 +1,45 @@
-# Kablosuz Sensör Ağlarında Bulanık Mantık ile Düğüm Lokalizasyonu
+# Node Localization Using Mamdani Fuzzy Inference Model
 
-Bu projede, **kablosuz sensör ağlarında (WSN)** düğüm konumlarının belirlenmesi problemi, **bulanık mantık** yöntemleri kullanılarak çözülmüştür. Amaç, düğümlerin ortalama lokalizasyon hatasını (ALE) minimuma indirmektir.
+This project addresses the node localization problem in **Wireless Sensor Networks (WSNs)** using a **Mamdani-type fuzzy inference system**. The goal is to estimate the positions of unknown nodes and minimize the **Average Localization Error (ALE)**.
 
-## 📌 Proje Amacı
+## 🎯 Project Objective
 
-Koordinatları bilinmeyen düğümlerin konumlarını, bulanık çıkarım sistemi ile tahmin ederek, düşük hatayla yüksek doğruluk elde etmek.
+To predict the coordinates of unknown nodes in WSNs by applying fuzzy logic techniques, aiming to reduce localization error and improve accuracy.
 
-## 🧠 Kullanılan Yöntem
+## 🧠 Methodology
 
-- **Bulanık Çıkarım Sistemi:** Mamdani tipi
-- **Üyelik Fonksiyonları:** Triangular, Gaussian
-- **Berraklaştırma (Defuzzification):** Center of Sums, Weighted Average
-- Toplamda 4 farklı kombinasyon test edilmiştir.
+- **Fuzzy Inference Type:** Mamdani
+- **Membership Functions:** Triangular, Gaussian
+- **Defuzzification Methods:** Center of Sums, Weighted Average
+- A total of 4 combinations were tested for performance comparison.
 
-## 📊 Performans Sonuçları
+## 📊 Performance Metrics
 
-| Metrik       | Değer      |
-|--------------|------------|
-| MAE          | 0.234      |
-| RMSE         | 0.305      |
-| Doğruluk     | %69.0      |
+| Metric      | Value   |
+|-------------|---------|
+| MAE         | 0.234   |
+| RMSE        | 0.305   |
+| Accuracy    | 69.0%   |
 
-**En iyi sonuç:** Gaussian üyelik fonksiyonu + Weighted Average berraklaştırma
+**Best performing setup:** Gaussian membership + Weighted Average defuzzification
 
-## 🗃️ Veri Kümesi
+## 🗃️ Dataset
 
-- UCI Machine Learning Repository'den alınmıştır  
-- 107 örnek, 6 özellik
-- Girişler: Çapa oranı, iletim aralığı, düğüm yoğunluğu, yineleme sayısı  
-- Çıkış: Ortalama Lokalizasyon Hatası (ALE)
+- Sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/)
+- 107 samples with 6 attributes
+- Inputs: Anchor ratio, transmission range, node density, number of iterations  
+- Output: Average Localization Error (ALE)
 
-## 🚀 Gelecek Planlar
+## 🚀 Future Work
 
-- Sugeno tipi sistemlerle karşılaştırma
-- Gerçek zamanlı verilerle test
-- Daha büyük veri kümeleriyle genel performans ölçümü
+- Comparison with Sugeno-type fuzzy systems
+- Testing on larger and more complex datasets
+- Real-time deployment in physical WSN environments
 
-## 🤝 Katkıda Bulunmak
+## 🤝 Contributions
 
-İyileştirme önerilerinizi, hata bildirimlerinizi ve katkılarınızı memnuniyetle bekliyoruz.
+Feel free to open issues or pull requests to improve the project.
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje eğitim amaçlıdır. Lisans gerektiren durumlarda lütfen iletişime geçiniz.
+This project is for academic purposes. For reuse or licensing questions, please contact the authors.
